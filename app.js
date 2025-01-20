@@ -14,19 +14,62 @@
 // Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
 
 
-function actualizarListaNombres(){
-// AGREGA EL NOMBRE A LA LISTA
-// MUESTRA LA LISTA 
+let listaNombreIngresados = [];
 
+// Asigna texto a un elemento HTML
+function asignarTextoElemento(elemento, texto) {
+    let elementoHTML = document.querySelector(`#${elemento}`);
+    elementoHTML.innerHTML = texto;
 }
 
-function agregarNombresLista(){
-// VALIDAR LA ENTRADA
-// AGREGAR EL NOMBRE A LA LISTA LLAMANDO A ACTUALIZARLISTANOMBRES
-
+// Limpia el campo de entrada de texto
+function limpiarAreaTexto() {
+    document.getElementById('amigo').value = '';
 }
 
-function sorteoNombres(){
+// Actualiza la lista visible en la página
+function actualizarListaNombres() {
+    let listaHTML = document.querySelector('#listaAmigos');
+    listaHTML.innerHTML = ''; // Limpiar contenido previo
+    // Crear elementos <li> para cada nombre en la lista
+    listaNombreIngresados.forEach((nombre) => {
+        let li = document.createElement('li');
+        li.textContent = nombre;
+        listaHTML.appendChild(li);
+    });
+    // Asegurarse de que la lista sea visible
+    listaHTML.style.display = 'block';
+}
 
-    //SORTEA UN NOMBRE DE LA LISTA Y LO MUESTRA
+// Agrega un nombre a la lista
+function agregarAmigo() {
+    // trim para quitar espacios innecesarios
+    let nombrePorTeclado = document.getElementById('amigo').value.trim();
+    // Validar entrada
+    if (nombrePorTeclado === '') {
+        alert('Debe ingresar un nombre válido.');
+        return;
+    }
+    // Agregar el nombre a la lista y actualizarla en pantalla
+    listaNombreIngresados.push(nombrePorTeclado);
+    actualizarListaNombres();
+    limpiarAreaTexto();
+}
+
+// Sortea un amigo aleatorio de la lista
+function sortearAmigo() {
+    if (listaNombreIngresados.length === 0) {
+        alert('La lista está vacía. Agregue amigos antes de sortear.');
+        return;
+    }
+
+    // Generar un índice aleatorio y seleccionar un nombre
+    let indiceAleatorio = Math.floor(Math.random() * listaNombreIngresados.length);
+    let amigoSorteado = listaNombreIngresados[indiceAleatorio];
+
+    // Mostrar el resultado
+    asignarTextoElemento('resultado', `¡El amigo secreto es: ${amigoSorteado}!`);
+
+    // Ocultar la lista de amigos
+    document.querySelector('#listaAmigos').style.display = 'none';
 }
