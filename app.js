@@ -35,10 +35,8 @@ function actualizarListaNombres() {
     listaNombreIngresados.forEach((nombre) => {
         let li = document.createElement('li');
         li.textContent = nombre;
-        listaHTML.appendChild(li);
+        listaHTML.append(li);
     });
-    // Asegurarse de que la lista sea visible
-    listaHTML.style.display = 'block';
 }
 
 // Agrega un nombre a la lista
