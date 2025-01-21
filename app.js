@@ -56,18 +56,16 @@ function agregarAmigo() {
 
 // Sortea un amigo aleatorio de la lista
 function sortearAmigo() {
+    // verificacion que la lista de amigos no este vacia
     if (listaNombreIngresados.length === 0) {
         alert('La lista está vacía. Agregue amigos antes de sortear.');
         return;
     }
-
     // Generar un índice aleatorio y seleccionar un nombre
     let indiceAleatorio = Math.floor(Math.random() * listaNombreIngresados.length);
     let amigoSorteado = listaNombreIngresados[indiceAleatorio];
-
     // Mostrar el resultado
     asignarTextoElemento('resultado', `¡El amigo secreto es: ${amigoSorteado}!`);
-
     // Ocultar la lista de amigos
     document.querySelector('#listaAmigos').style.display = 'none';
 }
