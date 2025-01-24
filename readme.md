@@ -54,7 +54,7 @@ El HTML y CSS fueron provistos como base por **ONE - Alura Latam**, mientras que
 
     1- Clona este repositorio usando Git Bash:
 
-        git clone https://github.com/<tu-usuario>/amigo-secreto.git
+        git clone https://raquerh.github.io/juego-amigo-secreto-ONE-G8/
 
     2 - Abre el archivo index.html en tu navegador:
 

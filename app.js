@@ -56,7 +56,7 @@ function agregarAmigo() {
 
 // Sortea un amigo aleatorio de la lista
 function sortearAmigo() {
-    // verificacion que la lista de amigos no este vacia
+    // verificación que la lista de amigos no esté vacía
     if (listaNombreIngresados.length === 0) {
         alert('La lista está vacía. Agregue amigos antes de sortear.');
         return;
@@ -69,3 +69,11 @@ function sortearAmigo() {
     // Ocultar la lista de amigos
     document.querySelector('#listaAmigos').style.display = 'none';
 }
+
+// Agrega un listener para que se pueda usar "Enter" como alternativa al botón "Adicionar"
+document.getElementById('amigo').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault(); // Evita que se realice el envío del formulario si existe
+        agregarAmigo(); // Llama a la función para agregar el nombre
+    }
+});
