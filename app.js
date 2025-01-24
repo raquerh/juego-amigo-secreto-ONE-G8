@@ -23,8 +23,11 @@ function asignarTextoElemento(elemento, texto) {
 }
 
 // Limpia el campo de entrada de texto
-function limpiarAreaTexto() {
-    document.getElementById('amigo').value = '';
+function limpiarAreaTexto(amigo, focus = true) {
+    // Limpia el campo de entrada de texto y pone el cursor ahi para ingresar otro texto
+    let areaTexto = document.getElementById('amigo')
+    areaTexto.value = '';
+    if (focus) campo.focus(); // Enfoca el campo
 }
 
 // Actualiza la lista visible en la página

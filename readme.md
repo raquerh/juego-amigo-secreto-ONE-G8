@@ -27,8 +27,9 @@ El HTML y CSS fueron provistos como base por **ONE - Alura Latam**, mientras que
     - Un botón **Sortear amigo** selecciona aleatoriamente un nombre de la lista y lo muestra en pantalla.
     - Posee validación: si la lista esta vacia, el sistema muestra una alerta pidiendo que agregue amigos antes de sortear.
 
-5. **Interacción intuitiva**:
-    - Incluye funcionalidades como presionar **Enter** como alternativa al botón **Añadir** para mejorar la experiencia del usuario.
+5. **Mejoras**:
+    - Presionar **Enter** como alternativa al botón **Añadir** para mejorar la experiencia del usuario.
+    - Posee un **focus** al campo de ingreso de nombre. Después de agregar un nombre o tras una entrada inválida, el cursor vuelve automáticamente al campo de texto para que el usuario pueda seguir escribiendo sin hacer clic nuevamente.
 
 ---
 
