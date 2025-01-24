@@ -14,20 +14,21 @@ El HTML y CSS fueron provistos como base por **ONE - Alura Latam**, mientras que
 <h3>Funcionalidades</h3>
 
 1. **Agregar nombres**:
-   - Los usuarios pueden ingresar nombres en un campo de texto.
-   - Los nombres se añaden a una lista visible al presionar el botón **Añadir** o la tecla **Enter**.
+    - Los usuarios pueden ingresar nombres en un campo de texto.
+    - Los nombres se añaden a una lista visible al presionar el botón **Añadir** o la tecla **Enter**.
 
 2. **Validación de entrada**:
-   - Si el campo de texto está vacío, el sistema muestra una alerta pidiendo un nombre válido.
+    - Si el campo de texto está vacío, el sistema muestra una alerta pidiendo un nombre válido.
 
 3. **Visualización de la lista**:
-   - Los nombres ingresados se muestran a medida que vamos cargando los nombres en una lista debajo del campo de entrada.
+    - Los nombres ingresados se muestran a medida que vamos cargando los nombres en una lista debajo del campo de entrada.
 
 4. **Sorteo aleatorio**:
-   - Un botón **Sortear amigo** selecciona aleatoriamente un nombre de la lista y lo muestra en pantalla.
+    - Un botón **Sortear amigo** selecciona aleatoriamente un nombre de la lista y lo muestra en pantalla.
+    - Posee validación: si la lista esta vacia, el sistema muestra una alerta pidiendo que agregue amigos antes de sortear.
 
 5. **Interacción intuitiva**:
-   - Incluye funcionalidades como presionar **Enter** como alternativa al botón **Añadir** para mejorar la experiencia del usuario.
+    - Incluye funcionalidades como presionar **Enter** como alternativa al botón **Añadir** para mejorar la experiencia del usuario.
 
 ---
 
