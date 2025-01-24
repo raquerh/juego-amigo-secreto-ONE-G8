@@ -3,6 +3,7 @@
 Este proyecto es parte de un **challenge** propuesto por [Alura Latam](https://www.aluracursos.com/) para practicar lógica de programación con Javascript.  
 
 El objetivo principal fue desarrollar la lógica en **JavaScript** para una aplicación que permite ingresar  nombres de amigos a una lista y realizar un sorteo aleatorio  y determinar quien es el  "amigo secreto". 
+
 El usuario deberá agregar nombres mediante un campo de texto y un botón "Adicionar". Los nombres ingresados se mostrarán en una lista visible en la página, y al finalizar, un botón "Sortear Amigo" seleccionará uno de los nombres de forma aleatoria, mostrando el resultado en pantalla.
 
 El HTML y CSS fueron provistos como base por **ONE - Alura Latam**, mientras que la lógica del proyecto fue completamente desarrollada por mí.
