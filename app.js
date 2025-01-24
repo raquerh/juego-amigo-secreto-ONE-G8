@@ -73,7 +73,7 @@ function sortearAmigo() {
 // Agrega un listener para que se pueda usar "Enter" como alternativa al botón "Adicionar"
 document.getElementById('amigo').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
-        event.preventDefault(); // Evita que se realice el envío del formulario si existe
+        event.preventDefault(); // asegura que solo se ejecute la función agregarAmigo()
         agregarAmigo(); // Llama a la función para agregar el nombre
     }
 });
