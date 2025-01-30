@@ -72,6 +72,5 @@ cd nombre-de-tu-repositorio
 
 ## 📌 Posibles mejoras  
 
-1️⃣ Reiniciar el sorteo: Permitir reiniciar la lista después del sorteo sin ocultar la lista de amigos.
+1️⃣ Guardar nombres: Implementar almacenamiento local para guardar la lista de nombres.
 
-2️⃣ Guardar nombres: Implementar almacenamiento local para guardar la lista de nombres.
