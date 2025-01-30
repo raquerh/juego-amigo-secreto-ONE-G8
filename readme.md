@@ -72,5 +72,21 @@ cd nombre-de-tu-repositorio
 
 ## 📌 Posibles mejoras  
 
-1️⃣ Guardar nombres: Implementar almacenamiento local para guardar la lista de nombres.
+1️⃣ **Guardar nombres**: Implementar almacenamiento local para guardar la lista de nombres.
+
+2️⃣ **Mostrar un historial de sorteos**: Guardar y mostrar los resultados de sorteos anteriores para que los usuarios puedan ver quién fue el "amigo secreto" en ediciones anteriores.
+
+3️⃣ **Verificación de duplicados**: Evitar que se agreguen nombres duplicados. Si el usuario intenta agregar un nombre que ya está en la lista, muestra una alerta indicando que ya existe.
+
+4️⃣ **Hacer que el sorteo sea "secreto"**: Cuando se hace el sorteo, cada usuario debería recibir un mensaje privado con el nombre del amigo secreto asignado, y los demás no deberían poder ver esta información.
+
+5️⃣ **Opción de "Asignar amigo secreto manualmente"**: Permitir que el usuario asigne un amigo secreto manualmente a cada persona de la lista, en lugar de realizar un sorteo aleatorio.
+
+6️⃣ **Agregar animaciones o efectos visuales**: Agregar transiciones, efectos o animaciones para mostrar los resultados del sorteo o cuando se agregan nuevos amigos.
+
+7️⃣ **Opción de exportar la lista de amigos a un archivo**: Permitir al usuario exportar la lista de amigos y los resultados del sorteo a un archivo CSV o PDF.
+
+8️⃣ **Hacer que el botón "Sortear Amigo" se desactive hasta que haya al menos 3 amigos en la lista**: Esto asegura que no se pueda hacer el sorteo sin suficientes participantes.
+
+
 
