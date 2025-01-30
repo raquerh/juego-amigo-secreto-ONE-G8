@@ -65,9 +65,9 @@ git clone https://github.com/raquerh/juego-amigo-secreto-ONE-G8
 cd nombre-de-tu-repositorio
 
 # Abre el archivo index.html en tu navegador
-start index.html  # En Windows
-open index.html   # En macOS
-xdg-open index.html  # En Linux
+- start index.html  # En Windows
+- open index.html   # En macOS
+- xdg-open index.html  # En Linux
 
 
 ## 📌 Posibles mejoras  
