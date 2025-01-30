@@ -56,6 +56,27 @@ function agregarAmigo() {
     actualizarListaNombres();
     limpiarAreaTexto();
 }
+// Elimina un nombre de la lista
+function eliminarAmigo() {
+    // trim para quitar espacios innecesarios
+    let nombrePorTeclado = document.getElementById('amigo').value.trim();
+    // Validar entrada
+    if (nombrePorTeclado === '') {
+        alert('Debe ingresar un nombre válido.');
+        return;
+    }
+    // Eliminar el nombre de la lista y actualizarla en pantalla
+    // Buscar el indice del nombre ingresado, si no esta en la lista indexOf() devuelve -1
+    let indice = listaNombreIngresados.indexOf(nombrePorTeclado);
+    if (indice !== -1) {
+        //elimina el nombre de la lista: splice(indice, 1) elimina 1 elemento del array listaNombreIngresados comenzando desde el índice "indice"
+        listaNombreIngresados.splice(indice, 1);
+    } else {
+        alert('El nombre no está en la lista.');
+    }
+    actualizarListaNombres();
+    limpiarAreaTexto();
+}
 
 // Sortea un amigo aleatorio de la lista
 function sortearAmigo() {
@@ -71,6 +92,19 @@ function sortearAmigo() {
     asignarTextoElemento('resultado', `¡El amigo secreto es: ${amigoSorteado}!`);
     // Ocultar la lista de amigos
     document.querySelector('#listaAmigos').style.display = 'none';
+}
+
+function reiniciarSorteo() {
+    // Limpiar la lista de amigos y la pantalla
+    listaNombreIngresados = [];
+    actualizarListaNombres();
+    // Limpiar el resultado del sorteo anterior
+    asignarTextoElemento('resultado', '');
+    // Mostrar nuevamente la lista de amigos
+    document.querySelector('#listaAmigos').style.display = 'block';
+    // Asegurar que el campo de texto quede enfocado para ingresar nuevos nombres
+    document.getElementById('amigo').value = '';
+    document.getElementById('amigo').focus();
 }
 
 // Agrega un listener para que se pueda usar "Enter" como alternativa al botón "Añadir"

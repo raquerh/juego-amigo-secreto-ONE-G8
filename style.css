@@ -115,12 +115,27 @@ button {
     cursor: pointer;
 }
 
-.button-add {
+#boton {
     background-color: var(--color-tertiary);
     color: var(--color-text);
+}
+
+.button-add{
+    border-radius: 0;
+}
+
+.button-remove{
     border-radius: 0 25px 25px 0;
 }
 
+.restart{
+    display: flex;
+    justify-content: center;
+    .button-restart{
+        padding: 10px 20px;
+        background-color: #b8c3fa;
+    }
+}
 .button-add:hover {
     background-color: #a1a1a1;
 }
